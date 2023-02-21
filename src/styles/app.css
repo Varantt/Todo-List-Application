@@ -39,6 +39,12 @@ section {
   min-height: 500px;
   box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 576px) {
+  .box-container {
+    min-width: 50%;
+    overflow: hidden;
+  }
+}
 .box-container input[type=text] {
   transition: display 1s;
   padding: 10px;
@@ -50,6 +56,11 @@ section {
   width: 250px;
   font-family: "Montserrat", sans-serif;
   border: 1px solid #E90064;
+}
+@media (max-width: 576px) {
+  .box-container input[type=text] {
+    width: 170px;
+  }
 }
 
 .appear-input {
@@ -67,6 +78,11 @@ button {
   color: rgb(0, 0, 0);
   margin: 5px;
 }
+@media (max-width: 576px) {
+  button {
+    padding: 5px;
+  }
+}
 
 .todo-items {
   margin-top: 14px;
@@ -77,6 +93,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 576px) {
+  .todo-items {
+    width: 280px;
+  }
 }
 .todo-items .todo-item {
   font-size: 12px;

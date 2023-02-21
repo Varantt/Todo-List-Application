@@ -7,6 +7,30 @@ $white: rgb(255, 255, 255);
 $black : rgb(0, 0, 0);
 $montserrat: 'Montserrat', sans-serif;
 
+// Responsive sizes
+
+$small-screen : 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+
+@mixin small-screen{
+    @media(max-width: $small-screen){
+        @content;
+    }
+}
+
+@mixin medium-screen{
+    @media(max-width: $medium-screen){
+        @content;
+    }
+}
+
+@mixin large-screen{
+    @media(max-width: $large-screen){
+        @content;
+    }
+}
+
 @mixin flexCenter () {
     display: flex;
     align-items:center;
@@ -14,6 +38,9 @@ $montserrat: 'Montserrat', sans-serif;
 }
 
 @mixin button{
+    @include small-screen{
+        padding:5px;
+    }
     padding:10px;
     background: rgb(43, 43, 43);
     border-radius: 5px;

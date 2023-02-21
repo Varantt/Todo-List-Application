@@ -16,8 +16,8 @@ section {
 .container {
   @include flexCenter();
   min-height: 100vh;
-  padding:20px;
-  box-sizing:border-box;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .input-line {
@@ -37,6 +37,11 @@ section {
   min-height: 500px;
   box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.5);
 
+  @include small-screen {
+    min-width: 50%;
+    overflow: hidden;
+  }
+
   input[type="text"] {
     transition: display 1s;
     padding: 10px;
@@ -48,6 +53,10 @@ section {
     width: 250px;
     font-family: $montserrat;
     border: 1px solid $salmon;
+
+    @include small-screen {
+      width: 170px;
+    }
   }
 }
 
@@ -56,7 +65,7 @@ section {
 }
 
 button {
-  @include button();
+  @include button;
   color: $white;
   border: 1px solid $black;
   background: transparent;
@@ -68,15 +77,19 @@ button {
   margin-top: 14px;
   box-sizing: border-box;
   padding-left: 10px;
-  flex-direction: column  !important;
+  flex-direction: column !important;
   width: 620px;
   @include flexCenter();
-  
+
+  @include small-screen {
+    width: 280px;
+  }
+
   .todo-item {
     font-size: 12px;
     display: flex;
     max-height: 30px;
-    width:inherit;
+    width: inherit;
     margin: 15px 0px;
     border-radius: 20px;
     align-items: center;
@@ -89,27 +102,28 @@ button {
 
 .complete {
   text-decoration-line: line-through;
-  color:$white;
-  background:$darkBlue !important;
+  color: $white;
+  background: $darkBlue !important;
   animation: fadeIn 1s ease-in;
-  
-  button{
+
+  button {
     color: $black;
     background-color: $white;
   }
 }
 
-.edited-item{
+.edited-item {
   border: 1px solid $fushia !important;
 }
 
 @keyframes fadeIn {
-  0%{
-    opacity : 0;
+  0% {
+    opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 1;
   }
-  
 }
+
+// responsivity
