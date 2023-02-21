@@ -1,0 +1,22 @@
+$darkBlue: #060047;
+$fushia : rgb(179, 0, 95);
+$salmon: #E90064;
+$pink : #FF5F9E;
+$lightSalmon: rgba(179, 0, 95, 0.2);
+$white: rgb(255, 255, 255);
+$black : rgb(0, 0, 0);
+$montserrat: 'Montserrat', sans-serif;
+
+@mixin flexCenter () {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+@mixin button{
+    padding:10px;
+    background: rgb(43, 43, 43);
+    border-radius: 5px;
+    outline: none;
+
+}

@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+section {
+  background: rgba(179, 0, 95, 0.2);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.input-line {
+  display: flex;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-width: 700px;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  min-height: 500px;
+  box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.5);
+}
+.box-container input[type=text] {
+  transition: display 1s;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 5px;
+  background-color: transparent;
+  font-size: 16px;
+  width: 250px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #E90064;
+}
+
+.appear-input {
+  display: block !important;
+}
+
+button {
+  padding: 10px;
+  background: rgb(43, 43, 43);
+  border-radius: 5px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  background: transparent;
+  color: rgb(0, 0, 0);
+  margin: 5px;
+}
+
+.todo-items {
+  margin-top: 14px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  flex-direction: column !important;
+  width: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-items .todo-item {
+  font-size: 12px;
+  display: flex;
+  max-height: 30px;
+  width: inherit;
+  margin: 15px 0px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid rgba(179, 0, 95, 0.2);
+}
+
+.complete {
+  text-decoration-line: line-through;
+  color: rgb(255, 255, 255);
+  background: #060047 !important;
+  animation: fadeIn 1s ease-in;
+}
+.complete button {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.edited-item {
+  border: 1px solid rgb(179, 0, 95) !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=app.css.map */

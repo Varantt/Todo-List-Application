@@ -1,0 +1,115 @@
+@import "../variables/variables.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $black;
+  font-family: $montserrat;
+  font-weight: 600;
+}
+
+section {
+  background: $lightSalmon;
+}
+
+.container {
+  @include flexCenter();
+  min-height: 100vh;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+.input-line {
+  display: flex;
+}
+
+.box-container {
+  @include flexCenter();
+  position: relative;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-width: 700px;
+  background-color: $white;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  min-height: 500px;
+  box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.5);
+
+  input[type="text"] {
+    transition: display 1s;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 5px;
+    background-color: transparent;
+    font-size: 16px;
+    width: 250px;
+    font-family: $montserrat;
+    border: 1px solid $salmon;
+  }
+}
+
+.appear-input {
+  display: block !important;
+}
+
+button {
+  @include button();
+  color: $white;
+  border: 1px solid $black;
+  background: transparent;
+  color: $black;
+  margin: 5px;
+}
+
+.todo-items {
+  margin-top: 14px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  flex-direction: column  !important;
+  width: 620px;
+  @include flexCenter();
+  
+  .todo-item {
+    font-size: 12px;
+    display: flex;
+    max-height: 30px;
+    width:inherit;
+    margin: 15px 0px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid $lightSalmon;
+  }
+}
+
+.complete {
+  text-decoration-line: line-through;
+  color:$white;
+  background:$darkBlue !important;
+  animation: fadeIn 1s ease-in;
+  
+  button{
+    color: $black;
+    background-color: $white;
+  }
+}
+
+.edited-item{
+  border: 1px solid $fushia !important;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity : 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+  
+}
