@@ -38,7 +38,7 @@ section {
   box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.5);
 
   @include small-screen {
-    min-width: 50%;
+    min-width: 310px;
     overflow: hidden;
   }
 

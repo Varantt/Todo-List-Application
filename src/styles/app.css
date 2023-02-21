@@ -39,9 +39,9 @@ section {
   min-height: 500px;
   box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 376px) {
+@media (max-width: 556px) {
   .box-container {
-    min-width: 50%;
+    min-width: 310px;
     overflow: hidden;
   }
 }
@@ -57,7 +57,7 @@ section {
   font-family: "Montserrat", sans-serif;
   border: 1px solid #E90064;
 }
-@media (max-width: 376px) {
+@media (max-width: 556px) {
   .box-container input[type=text] {
     width: 170px;
   }
@@ -78,7 +78,7 @@ button {
   color: rgb(0, 0, 0);
   margin: 5px;
 }
-@media (max-width: 376px) {
+@media (max-width: 556px) {
   button {
     padding: 5px;
   }
@@ -94,7 +94,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 376px) {
+@media (max-width: 556px) {
   .todo-items {
     width: 280px;
   }
